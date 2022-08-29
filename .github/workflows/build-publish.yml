@@ -1,0 +1,58 @@
+name: AnyConnect Build and Publish
+on:
+  pull_request:
+    branches:
+      - develop
+
+jobs:
+  build:
+    env:
+      BUILDNUM_FOR_GLOBAL: ""
+      ACTIONS_ALLOW_UNSECURE_COMMANDS: true
+
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      pull-requests: write
+      contents: read
+
+    steps:
+      - name: Checkout 
+        uses: actions/checkout@v1     
+      
+      - name: Configure aws credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          role-to-assume: arn:aws:iam::592311462240:role/advanced-artefacts-gh-advancedcsg
+          aws-region: eu-west-2
+
+      - name: Advanced Artefacts - Setup CLI
+        uses: advancedcsg/actions-setup-advanced-artefacts-cli@v1.2.0
+        with:
+          disable-auto-auth-container-images: true
+
+      - name: Setup .Net
+        uses: actions/setup-dotnet@v1.9.0
+        with:
+          dotnet-version: '6.x'
+          source-url: https://advanced-592311462240.d.codeartifact.eu-west-2.amazonaws.com/nuget/nuget-dev/v3/index.json
+         
+      - name: Generate build number
+        uses: zyborg/gh-action-buildnum@v1 
+        with:
+          gist_token: ${{ secrets.GIST_TOKEN }}
+          set_env: true
+
+      - name: Assign BUILD_NUMBER
+        run: echo ::set-env name=BUILD_NUMBER::2.0.0.${{ env.BUILDNUM_FOR_GLOBAL }}
+
+      - name: Build
+        run: dotnet build C:/Users/Rajkiran.Rajendran/source/repos/TestSymbols/TestSymbols.sln /p:nopackageanalysis=true -c Release -v n /p:version="2.1.1" /p:includesymbols=true /p:deployonbuild=true /p:publishprofile=CIProfile -p:SymbolPackageFormat=snupkg
+
+      - name: List
+        run: find . -name *nupkg
+        
+      - name: Push to AWS CodeArtifact
+        run: nuget push "**/*.nupkg"
+      
+      
