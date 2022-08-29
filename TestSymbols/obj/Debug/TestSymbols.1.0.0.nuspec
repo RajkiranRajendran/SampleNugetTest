@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>TestSymbols</id>
+    <version>1.0.0</version>
+    <authors>TestSymbols</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETCoreApp3.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\Rajkiran.Rajendran\source\repos\TestSymbols\TestSymbols\bin\Debug\netcoreapp3.1\TestSymbols.runtimeconfig.json" target="lib\netcoreapp3.1\TestSymbols.runtimeconfig.json" />
+    <file src="C:\Users\Rajkiran.Rajendran\source\repos\TestSymbols\TestSymbols\bin\Debug\netcoreapp3.1\TestSymbols.dll" target="lib\netcoreapp3.1\TestSymbols.dll" />
+  </files>
+</package>
