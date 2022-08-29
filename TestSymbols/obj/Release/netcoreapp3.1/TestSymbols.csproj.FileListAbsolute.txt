@@ -1,0 +1,14 @@
+C:\Users\Rajkiran.Rajendran\source\repos\TestSymbols\TestSymbols\bin\Release\netcoreapp3.1\TestSymbols.exe
+C:\Users\Rajkiran.Rajendran\source\repos\TestSymbols\TestSymbols\bin\Release\netcoreapp3.1\TestSymbols.deps.json
+C:\Users\Rajkiran.Rajendran\source\repos\TestSymbols\TestSymbols\bin\Release\netcoreapp3.1\TestSymbols.runtimeconfig.json
+C:\Users\Rajkiran.Rajendran\source\repos\TestSymbols\TestSymbols\bin\Release\netcoreapp3.1\TestSymbols.runtimeconfig.dev.json
+C:\Users\Rajkiran.Rajendran\source\repos\TestSymbols\TestSymbols\bin\Release\netcoreapp3.1\TestSymbols.dll
+C:\Users\Rajkiran.Rajendran\source\repos\TestSymbols\TestSymbols\bin\Release\netcoreapp3.1\TestSymbols.pdb
+C:\Users\Rajkiran.Rajendran\source\repos\TestSymbols\TestSymbols\obj\Release\netcoreapp3.1\TestSymbols.csproj.AssemblyReference.cache
+C:\Users\Rajkiran.Rajendran\source\repos\TestSymbols\TestSymbols\obj\Release\netcoreapp3.1\TestSymbols.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rajkiran.Rajendran\source\repos\TestSymbols\TestSymbols\obj\Release\netcoreapp3.1\TestSymbols.AssemblyInfoInputs.cache
+C:\Users\Rajkiran.Rajendran\source\repos\TestSymbols\TestSymbols\obj\Release\netcoreapp3.1\TestSymbols.AssemblyInfo.cs
+C:\Users\Rajkiran.Rajendran\source\repos\TestSymbols\TestSymbols\obj\Release\netcoreapp3.1\TestSymbols.csproj.CoreCompileInputs.cache
+C:\Users\Rajkiran.Rajendran\source\repos\TestSymbols\TestSymbols\obj\Release\netcoreapp3.1\TestSymbols.dll
+C:\Users\Rajkiran.Rajendran\source\repos\TestSymbols\TestSymbols\obj\Release\netcoreapp3.1\TestSymbols.pdb
+C:\Users\Rajkiran.Rajendran\source\repos\TestSymbols\TestSymbols\obj\Release\netcoreapp3.1\TestSymbols.genruntimeconfig.cache
