@@ -1,8 +1,6 @@
 name: AnyConnect Build and Publish
 on:
-  pull_request:
-    branches:
-      - develop
+  workflow_dispatch:
 
 jobs:
   build:
